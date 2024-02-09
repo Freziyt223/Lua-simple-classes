@@ -1,5 +1,5 @@
 Object = {}
-function Object.new(self, ...)
+function Object:new(...)
     object = setmetatable({}, {__index = self})
     local Arguments = ...
     for k, v in pairs(self) do

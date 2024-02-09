@@ -9,7 +9,7 @@
 }
 Спостерігач = {}
 
-function Роль.створити(self, ...)
+function Роль:створити(...)
     Вивід = setmetatable({}, {__index = self})
     
     local Аргументи = ...
