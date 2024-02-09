@@ -12,9 +12,9 @@
 function Роль:створити(...)
     Вивід = setmetatable({}, {__index = self})
     
-    local Аргументи = ...
-    for k, v in pairs(self) do
-        Вивід[k] = Аргументи[k] or v
+    
+    for k, v in pairs(...) do
+        Вивід[k] = v or Вивід[k]
     end
     
     return Вивід
