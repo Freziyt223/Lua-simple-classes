@@ -1,9 +1,9 @@
 Object = {}
 function Object:new(...)
     object = setmetatable({}, {__index = self})
-    local Arguments = ...
-    for k, v in pairs(self) do
-        object[k] = Arguments[k] or v
+    
+    for k, v in pairs(...) do
+        object[k] = v or object[k]
     end
     return object
 end
