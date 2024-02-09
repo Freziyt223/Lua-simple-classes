@@ -1,5 +1,5 @@
 
-<span style="color: yellow;">Ukrainian variant</span>
+<span style="color:yellow;">Ukrainian variant</span>
 **Це дуже проста репрезентація функції class в інших мовах програмування.**
 Об'єкт <span style="color: red;">*Object*</span> може бути змінений, як і його назва. Усі змінні, функції, списки прив'язані до нього автоматично додадуться до нового об'єкта.
 ```lua
