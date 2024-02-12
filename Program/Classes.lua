@@ -5,7 +5,13 @@ function Object:new(...)
     local object = setmetatable({}, {__index = self})
     
     for k, v in pairs(...) do
-        object[k] = v or object[k]
+        if k ~= "Local" then
+            object[k] = v or object[k]
+        else
+            Local = setmetatable({}, {__index = v})
+        end
     end
-    return object
+    return object, Local
 end
+
+

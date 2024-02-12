@@ -14,9 +14,13 @@ function Роль:створити(...)
     local Вивід = setmetatable({}, {__index = self})
     local Аргументи = ...
     for k, v in pairs(...) do
-        Вивід[k] = v or Вивід[k]
+        if k ~= "Local" then
+            Вивід[k] = v or Вивід[k]
+        else
+            Local = setmetatable({}, {__index = v})
+        end
     end
-    return Вивід
+    return Вивід, Local
 end
 function Роль:ПоказатиНазву()
    
