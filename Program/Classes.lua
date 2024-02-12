@@ -1,4 +1,6 @@
-Object = {}
+Object = {
+    something = "heck"
+}
 function Object:new(...)
     local object = setmetatable({}, {__index = self})
     
