@@ -1,5 +1,5 @@
 # Ukrainian variant
-- [English Variant](#EnglishVariant)
+- [English Variant](#english-variant)
 ## Зміст:
   - [Зміст](#Зміст)
   - [Приклади](#Прикладиexamples)
