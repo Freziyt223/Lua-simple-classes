@@ -50,6 +50,10 @@ local NewObject, NewObject.Local = Object:new(...) --додасть таблиц
 ```
 ## Завантаження
 Натисність на кнопку Code у правому верхньому кутку, потім натисніть Download ZIP file, розпакуйте, і можете використовувати код в Program/Classes.lua, або сам файл.
+Ви також можете використовувати LuaRocks:
+```lua
+luarocks install simple_classes_lua
+```
 
 # English variant
 It's simple representation of class function in other programming languages.
@@ -80,4 +84,7 @@ Examples
 The examples use classes to create a role for a clone of the popular board game Mafia, so as not to create a separate role skin with its features and options based on "Role"
 
 To download go to GitHub repository and press on Code in right up corner, then press download ZIP file and unpack it, you can use Program/Classes.lua code or whole file
-<Code>На головній сторінці цього репозиторію натисніть Code в правому верньому куті, потім Download ZIP Foulder, після чого розпакуйте архів у якесь місце. <Code>
+You can also use LuaRocks:
+```cmd
+luarocks install simple_classes_lua
+```
